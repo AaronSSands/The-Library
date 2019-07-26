@@ -1,6 +1,6 @@
 @charset"utf-8";
 Body{
-    background-color: #C37000;
+    background-color: #cc3000;
     font-family: Arial, Tahoma, SansSerif, "Old English Text MT";
     color: #000000;
 }
@@ -25,21 +25,22 @@ header{
 }
 
 #container{
-    width: 100%
+    width: 100%;
 }
 
 nav {
     color: #000000;
     padding: 5px;
     padding-bottom: 20px;
-    width: 55%;
+    width: 100%;
     margin:auto;
-    /*margin-left: 20%;*/
     font-weight: bold;
     border-radius: 0px;
+    text-align: center;
 }
 
 nav ul{
+    display: inline-block;
     text-align: center;
     list-style:none;
     margin:auto;
@@ -47,15 +48,15 @@ nav ul{
 
 nav ul li{
     float: left;
-    padding: 5px
+    padding: 5px;
 }
 
 nav ul li a:link, nav ul li a:visited{
     display: block;
     width: 150px;
-    margin-right: 4px;
+    margin-right: 2px;
     color: #000000;
-    padding: 2px 4px 2px 4px;
+    padding: 3px 5px 3px 5px;
     background-color: #ffffff;
     text-decoration: none;
     font-family: "Old English Text MT";
@@ -89,13 +90,22 @@ td {
 .one {
     empty-cells: hide;}
 .color1 {
-    background-color: burlywood;
+    background-color: #deb887;
 }
 
 .color2 {
-    background-color: burlywood;
+    background-color: #deb887;
 }
 
 .color3 {
-    background-color: burlywood;
+    background-color: #deb887;
+}
+
+form{
+    Background-color: #deb887;
+    padding:5px 5px 5px 5px;
+    border-top: 2px solid#111111;
+    border-bottom: 2px solid#111111;
+    border-left: 2px solid#111111;
+    border-right: 2px solid#111111;
 }

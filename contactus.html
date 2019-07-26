@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>The Library-Contact Us</title>
+ <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+ <img src="images/logo.gif" alt="The Library" width="200" height="200">
+ <h1>Contact The Library</h1>
+ </header>
+<nav>
+ <ul>
+  <li><a href="index.html">Home Page</a></li>
+  <li><a href="aboutus.html">About Us</a></li>
+  <li><a href="history.html">History</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="contactus.html">Contact Us</a></li>
+
+ </ul>
+</nav>
+<main>
+ <h2>Give Us Your Feedback!</h2>
+ <form autocomplete="on" action="" method="post">
+ <fieldset>
+  <legend>
+   Information
+  </legend>
+  <label>
+   First Name:
+   <input type="text" name="firstname" size="30" maxlength="100">
+  </label>
+  <br/>
+  <label>
+   Last Name:
+   <input type="text" name="lastname" size="30" maxlength="100">
+  </label>
+  <br/>
+  <label>
+   Email:
+   <input type="email" name="email" autocomplete="off" size="30" maxlength="100">
+  </label>
+  <br/>
+  <label>
+   Phone #:
+   <input type="tel" name="telephone" size="30" max-length="100"/>
+  </label>
+  <br/>
+ </fieldset>
+  <br/>
+  <fieldset>
+   <legend>
+    Your Review:
+   </legend>
+   <p>
+    <label for="hear-about">
+     How did you hear about us?
+    </label>
+    <select name="referrer" id="hear-about">
+     <option value="google">Google</option>
+     <option value="friend">Friend</option>
+     <option value="advert">Advert</option>
+     <option value="other">Other</option>
+    </select>
+   </p>
+   <p>
+    Would you visit again?
+    <br />
+    <label>
+     <input type="radio" name="rating" value="yes"/>
+     Yes
+    </label>
+    <label>
+     <input type="radio" name="rating" value="no"/>
+     No
+    </label>
+    <label>
+     <input type="radio" name="rating" value="maybe"/>
+     Maybe
+    </label>
+   </p>
+   <p>
+    <label for="comments">
+     Comments:
+    </label>
+    <br/>
+    <textarea rows="4" cols="40" id="comments">
+    </textarea>
+   </p>
+   <label>
+    <input type="checkbox" name="subscribe" checked="checked"/>
+    Sign me up for E-mail updates
+   </label>
+   <br/>
+   <input type="submit" value="Submit Review" />
+   <input type="reset" value="Reset Review"/>
+  </fieldset>
+ </form>
+</main>
+<footer></footer>
+</body>
+</html>
