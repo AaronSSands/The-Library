@@ -1,22 +1,22 @@
 @charset"utf-8";
 Body{
-    background-color: #cc3000;
-    font-family: Arial, Tahoma, SansSerif, "Old English Text MT";
+    background-color: #111111;
+    font-family: Arial, Tahoma, SansSerif, "Aston Script";
     color: #000000;
 }
 
 h1{
-    color: #ffffff;
-    font-family: "Old English Text MT";
+    color: #000000;
+    font-family: "Aston Script";
 }
 
 h2{
     text-align: center;
-    color: #000000;
+    color: #ffffff;
 }
 
 header{
-    background-color: #000000;
+    background-color: maroon;
     color: #ffffff;
     text-align: center;
     padding: 5px;
@@ -35,7 +35,7 @@ nav {
     width: 100%;
     margin:auto;
     font-weight: bold;
-    border-radius: 0px;
+    border-radius: 0;
     text-align: center;
 }
 
@@ -57,34 +57,36 @@ nav ul li a:link, nav ul li a:visited{
     margin-right: 2px;
     color: #000000;
     padding: 3px 5px 3px 5px;
-    background-color: #ffffff;
+    background-color: #d2b48c;
     text-decoration: none;
-    font-family: "Old English Text MT";
+    font-family: "Aston Script";
     font-size: larger;
 }
 
 nav ul li a:hover{
     color: #111111;
-    background-color: burlywood;
+    background-color: maroon;
 }
 
 main{
     font-family: Arial, Tahoma, SansSerif;
-    color: #000000;}
+    color: #ffffff;}
 table{
-    width: 1300px;}
+    width: 1300px;
+    color: #000000;
+}
 th, td {
     padding: 7px 10px 10px 10px;}
 th {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 98%;
-    border-bottom: 2px solid #111111;
-    border-top: 1px solid #111111;
+    border-bottom: 2px solid #000000;
+    border-top: 1px solid #000000;
     text-align: left;}
 
 td {
-    border: 1px solid #111111;
+    border: 1px solid #000000;
     padding: 15px;}
 
 .one {
@@ -104,8 +106,28 @@ td {
 form{
     Background-color: #deb887;
     padding:5px 5px 5px 5px;
-    border-top: 2px solid#111111;
-    border-bottom: 2px solid#111111;
-    border-left: 2px solid#111111;
-    border-right: 2px solid#111111;
+    border-top: 2px solid#000000;
+    border-bottom: 2px solid#000000;
+    border-left: 2px solid#000000;
+    border-right: 2px solid#000000;
+    border-radius: 15px;
+    color: #000000;
+}
+
+input[type=number]{
+    background-color: aqua;
+}
+ div {
+     font-family: "Aston Script";
+
+ }
+
+.imgList {
+    width:100%;
+    Height:auto;
+}
+
+.imgContainer {
+    padding: 20px;
+    width:50%;
 }

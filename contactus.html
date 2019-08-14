@@ -3,7 +3,9 @@
 <head>
 <title>The Library-Contact Us</title>
  <link rel="stylesheet" type="text/css" href="style.css">
+ <meta charset="UTF-8">
 </head>
+
 <body>
 <header>
  <img src="images/logo.gif" alt="The Library" width="200" height="200">
@@ -16,6 +18,8 @@
   <li><a href="history.html">History</a></li>
   <li><a href="menu.html">Menu</a></li>
   <li><a href="contactus.html">Contact Us</a></li>
+     <li><a href="chefspage.html">Chefs Bio</a></li>
+     <li><a href="gallery.html">The Gallery</a></li>
 
  </ul>
 </nav>
@@ -28,24 +32,43 @@
   </legend>
   <label>
    First Name:
-   <input type="text" name="firstname" size="30" maxlength="100">
+   <input type="text" name="firstname" required size="30" maxlength="100">
   </label>
   <br/>
   <label>
    Last Name:
-   <input type="text" name="lastname" size="30" maxlength="100">
+   <input type="text" name="lastname" required size="30" maxlength="100">
   </label>
   <br/>
   <label>
    Email:
-   <input type="email" name="email" autocomplete="off" size="30" maxlength="100">
+   <input type="email" name="email" required autocomplete="off" size="30" maxlength="100">
   </label>
   <br/>
   <label>
    Phone #:
-   <input type="tel" name="telephone" size="30" max-length="100"/>
+   <input type="tel" name="telephone" required size="30"/>
   </label>
   <br/>
+
+  <h3>
+   Enter your four-digit passcode, then click OK:
+  </h3>
+  <label for="id1"></label><input id="id1" type="number" min="1000" max="9999">
+  <button onclick="myFunction()">OK</button>
+  <p id="passcode">
+  </p>
+
+  <script>
+   function myFunction(){
+    var inpObj = document.getElementById("id1");
+    if (inpObj.checkValidity()===false) {
+     document.getElementById("passcode").innerHTML = inpObj.validationMessage;
+    } else{
+     document.getElementById("passcode").innerHTML = "Passcode Valid";
+    }
+   }
+  </script>
  </fieldset>
   <br/>
   <fieldset>
@@ -97,6 +120,12 @@
   </fieldset>
  </form>
 </main>
-<footer></footer>
+<footer>
+ <p>
+  <a href="index.html">Home Page</a>  <a href="aboutus.html">About Us</a> <a href="history.html">History</a>
+  <a href="menu.html">Menu</a> <a href="contactus.html">Contact Us</a> <a href="chefspage.html">Chefs Bio</a>
+  <a href="gallery.html">The Gallery</a>
+ </p>
+</footer>
 </body>
 </html>
